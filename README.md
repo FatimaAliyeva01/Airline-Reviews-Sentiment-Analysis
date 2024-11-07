@@ -3,7 +3,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![NLTK](https://img.shields.io/badge/NLTK-3.6-green.svg)
+![Transformers](https://img.shields.io/badge/Transformers-4.26-orange.svg)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5.2-green.svg)
 
 ## 📝 Table of Contents
@@ -21,48 +21,48 @@
 
 ## 📚 Overview
 
-The **Airline Reviews Sentiment Analysis** project is a natural language processing (NLP) tool designed to analyze customer sentiment from airline reviews. This project uses machine learning to classify reviews as positive, negative, or neutral, helping airlines and analysts understand customer satisfaction and identify areas for improvement.
+The **Airline Reviews Sentiment Analysis** project leverages natural language processing (NLP) and machine learning to assess customer sentiment from airline reviews. By classifying these reviews as positive or negative, this tool assists airlines and analysts in understanding customer satisfaction and improving service quality.
 
 ## 🔍 Project Details
 
 ### Objective
-To build a sentiment analysis model that classifies airline customer reviews and extracts insights into customer satisfaction.
+To build a reliable sentiment analysis model that classifies airline customer reviews and uncovers insights into overall customer experiences.
 
 ### Data Source
-- **Website**: [Skytrax](https://www.airlinequality.com/)
-- **Data**: Customer reviews with sentiments reflecting experiences with various airlines
+- **Collected From**: Scraped data from airline review platforms.
+- **Content**: Customer reviews with accompanying sentiment labels reflecting their experiences.
 
 ### Methodology
-1. **Data Collection**: Scrape customer reviews from the Skytrax website using BeautifulSoup.
+1. **Data Collection**: Utilize web scraping tools like BeautifulSoup to gather reviews.
 2. **Data Preprocessing**:
-   - Cleaning text data by removing HTML tags, special characters, and unnecessary spaces.
-   - Tokenizing and stemming words for effective analysis.
-3. **Feature Extraction**:
-   - Applying TF-IDF vectorization to convert text into numerical features.
-4. **Model Training**:
-   - Training a sentiment analysis model using techniques like Naive Bayes, Logistic Regression, and Support Vector Machine (SVM).
+   - Clean and normalize text data by removing noise (e.g., special characters and HTML tags).
+   - Tokenize and process text for feature extraction.
+3. **Feature Engineering**:
+   - Convert text data into numerical representations using techniques like TF-IDF.
+4. **Model Development**:
+   - Train the sentiment analysis model using `distilbert-base-uncased-finetuned-sst-2-english` and other baseline algorithms (e.g., Logistic Regression).
 5. **Evaluation**:
-   - Assessing model performance with accuracy, precision, recall, and F1-score metrics.
+   - Evaluate performance using accuracy, precision, recall, and F1-score.
 
 ## ✨ Key Features
-- **Comprehensive Sentiment Analysis**: Distinguishes positive, neutral, and negative sentiments from airline reviews.
-- **Scalable Design**: Easily adaptable to other review data sources or different NLP tasks.
-- **Valuable Insights**: Provides insights into common complaints and positive feedback trends for airlines.
+- **Robust Sentiment Classification**: Distinguishes positive and negative sentiments from customer feedback.
+- **Adaptable Framework**: Can be extended to other review datasets and NLP tasks.
+- **Insightful Analysis**: Highlights common themes in customer feedback, aiding airlines in decision-making.
 
 ## ⚙️ Requirements
 - **Python**: Version 3.8 or higher
-- **Libraries**:
-  - `requests`
-  - `BeautifulSoup4`
+- **Key Libraries**:
+  - `transformers`
   - `pandas`
   - `nltk`
   - `scikit-learn`
+  - `plotly`
 
-_All dependencies are listed in `requirements.txt`._
+_All necessary packages can be found in `requirements.txt`._
 
 ## 📈 Results and Insights
 
-This project provides a clear analysis of airline review sentiments, identifying key patterns in customer satisfaction and dissatisfaction. It offers valuable insights into areas like customer service, comfort, and value for money.
+The analysis provides a detailed view of customer sentiment, helping identify areas of high satisfaction and common pain points. This insight is valuable for airlines to enhance their services and customer engagement strategies.
 
 ## 📄 License
 
@@ -70,10 +70,11 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-For questions or feedback, feel free to reach out:
+For any questions or further information, please reach out:
 
 - **Email**: [fatimaliyva@gmail.com](mailto:fatimaliyva@gmail.com)
 - **LinkedIn**: [Fatima Aliyeva](https://www.linkedin.com/in/fatima-aliyeva-/)
 - **GitHub**: [FatimaAliyeva01](https://github.com/FatimaAliyeva01)
 
 ---
+
